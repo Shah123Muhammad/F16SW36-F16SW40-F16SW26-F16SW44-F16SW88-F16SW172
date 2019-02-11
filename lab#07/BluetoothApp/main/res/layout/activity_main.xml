@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="368dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/turnOnBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turn On" />
+
+        <Button
+            android:id="@+id/getVisibleBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Visible" />
+
+        <Button
+            android:id="@+id/showPairedDeviceBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Paired Device" />
+
+        <Button
+            android:id="@+id/turnOffBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turn Off" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pairedView"
+        android:layout_width="211dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Paired Devices"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:textColor="@android:color/background_dark" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="382dp"
+        android:layout_height="257dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pairedView" />
+
+</android.support.constraint.ConstraintLayout>
